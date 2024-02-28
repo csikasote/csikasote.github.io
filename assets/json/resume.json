@@ -23,17 +23,6 @@
       "endDate": "2015"
     }
   ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
       "institution": "University of Cape Town (UCT), Cape Town, South Africa",
@@ -125,8 +114,6 @@
       "url": "https://example.com",
       "startDate": "2024",
       "endDate": "2024"
-      //"summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      //"highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     },
     {
       "organization": "Second Workshop on Computation and Written Language",
@@ -134,8 +121,6 @@
       "url": "https://example.com",
       "startDate": "2024",
       "endDate": "2024"
-      //"summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      //"highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     },
     {
       "organization": "Pan African Conference on Science, Computing & Telecommunications",
@@ -143,18 +128,6 @@
       "url": "https://example.com",
       "startDate": "2023",
       "endDate": "2023"
-      //"summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      //"highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
