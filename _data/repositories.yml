@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - csikasote
+  - unza-speech-lab
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - csikasote/BembaSpeech
+  - csikasote/bigc
+  - unza-speech-lab/zambezi-voice
