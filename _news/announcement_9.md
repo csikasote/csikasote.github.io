@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I had the privilege to give a talk on 'Building multimodal dataset for African languages: Experiences from Bemba' at this year's [AfricaNLP 2024](https://sites.google.com/view/africanlp2024/home) that was co-located at [ICLR 2024](https://iclr.cc) conference.
+I had the privilege to give a talk on 'Building multimodal dataset for African languages: Experiences from Bemba' at this year's [AfricaNLP 2024](https://sites.google.com/view/africanlp2024/home) edition that was co-located at [ICLR 2024](https://iclr.cc) conference.
