@@ -8,8 +8,8 @@ profile:
   align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  # more_info: >
-  #  <p>555 your office number</p>
+  more_info: >
+    <p>SKSCLA001@myuct.ac.za</p>
   #  <p>123 your address street</p>
   #  <p>Your City, State 12345</p>
 
