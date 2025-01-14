@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have been elected Student-Member of the [ACL Special Interest Group on Writing Systems and Written Language (SIGWrit)](https://sigwrit.org).
+I have been elected Student Member of the [ACL Special Interest Group on Writing Systems and Written Language (SIGWrit)](https://sigwrit.org).
