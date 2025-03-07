@@ -109,16 +109,37 @@
   ],
   "volunteer": [
     {
+      "organization": "Special Interest Group on Computation and Written Language (SIGWrit)",
+      "position": "Student Member",
+      "url": "https://sigwrit.org/",
+      "startDate": "2025",
+      "endDate": "2025"
+    },
+    {
+      "organization": "First Workshop on Language Models for Low-Resource Languages",
+      "position": "Programme committe member",
+      "url": "https://aclanthology.org/volumes/2025.loreslm-1",
+      "startDate": "2025",
+      "endDate": "2025"
+    },
+    {
+      "organization": "IWSLT 2025, Dialectal and low-resource track, Bemba language",
+      "position": "Co-organizer",
+      "url": "https://iwslt.org/2025/low-resource",
+      "startDate": "2025",
+      "endDate": "2025"
+    },
+    {
       "organization": "IWSLT 2024, Dialectal and low-resource track, Bemba language",
       "position": "Co-organizer",
-      "url": "https://example.com",
+      "url": "https://iwslt.org/2024/low-resource",
       "startDate": "2024",
       "endDate": "2024"
     },
     {
       "organization": "Second Workshop on Computation and Written Language",
-      "position": "Committe member",
-      "url": "https://example.com",
+      "position": "Programme committe member",
+      "url": "https://sigwrit.org/",
       "startDate": "2024",
       "endDate": "2024"
     },
