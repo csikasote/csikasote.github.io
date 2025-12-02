@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-10-28 00:30:00-0400
+date: 2025-12-04 00:30:00-0400
 inline: true
 related_posts: false
 ---
 
-Presented our paper at the [Southern African Conference in Artificial Intelligence Research (SACAIR 2025)](https://2025.sacair.org.za) in Cape Town, South Africa.
+Presented our [paper](https://doi.org/10.1007/978-3-032-11733-5_9) at [SACAIR 2025](https://2025.sacair.org.za) conference in Cape Town, South Africa.
