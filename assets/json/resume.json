@@ -9,16 +9,23 @@
   },
   "work": [
     {
+      "name": "Department of Computer Science, University of Cape Town",
+      "position": "Teaching Assistant",
+      "url": "https://sit.uct.ac.za/department-computer-science",
+      "startDate": "2024",
+      "endDate": "2025"
+    },
+    {
       "name": "Department of Computer Science, University of Zambia",
       "position": "Lecturer/Research Fellow",
-      "url": "https://www.unza.zm/schools/natural-sciences/departments/computer-science",
+      "url": "https://www.unza.zm/natural-and-applied-sciences/computing-and-informatics",
       "startDate": "2015",
       "endDate": "2024"
     },
     {
       "name": "Department of Computer Science, University of Zambia",
       "position": "Teaching Assistant",
-      "url": "https://www.unza.zm/schools/natural-sciences/departments/computer-science",
+      "url": "https://www.unza.zm/natural-and-applied-sciences/computing-and-informatics",
       "startDate": "2012",
       "endDate": "2015"
     }
