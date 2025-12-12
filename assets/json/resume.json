@@ -67,6 +67,12 @@
   ],
   "publications": [
     {
+      "name": "Investigating the Impact of Multilingual Pre-trained Speech Models on Gender Bias in ASR for Low Resource African Languages",
+      "publisher": "Springer Nature Switzerland",
+      "releaseDate": "2025-12-01",
+      "url": "https://doi.org/10.1007/978-3-032-11733-5_9"
+    },
+    {
       "name": "BIG-C: a Multimodal Multi-Purpose Dataset for Bemba",
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "2023-07-12",
