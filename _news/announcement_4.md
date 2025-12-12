@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Excited to be awarded a grant by Lacuna Fund to create a Multimodal Dataset for Bemba Language. This is a collaborative work between the [University of Zambia](https://www.unza.zm/schools/natural-sciences/departments/computer-science) and the [George Mason University NLP](https://nlp.cs.gmu.edu) group.
+Excited to be awarded a grant by Lacuna Fund to create a Multimodal Dataset for Bemba Language. This is a collaborative work between the [University of Zambia](https://www.unza.zm/natural-and-applied-sciences/computing-and-informatics) and the [George Mason University NLP](https://nlp.cs.gmu.edu) group.
