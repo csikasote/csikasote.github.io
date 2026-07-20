@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I attended and presented my PhD research at the [Postgraduate Symposium](https://saicsit.org/2026/postgraduate-symposium/) at [SAICSIT 2026](https://saicsit.org/2026/) conference in Cape Town, South Africa. See [slides](assets/pdf/SAICSIT2026_symposium_slides.pdf) and [poster](assets/pdf/SAICSIT2026_symposium_poster.pdf).
+I [attended](https://saicsit.org/2026/wp-content/uploads/2026/07/Programme-booklet.pdf) and [presented](assets/pdf/SAICSIT2026_symposium_slides.pdf) my research at the [Postgraduate Symposium](https://saicsit.org/2026/postgraduate-symposium/) at [SAICSIT 2026](https://saicsit.org/2026/) conference in Cape Town, South Africa.
