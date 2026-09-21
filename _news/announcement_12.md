@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I [attended](assets/pdf/saicsit2026_volunteer_certificate.pdf) and [presented](assets/pdf/SAICSIT2026_symposium_slides.pdf) at the [Postgraduate Symposium](https://saicsit.org/2026/postgraduate-symposium/) part of my work at [SAICSIT 2026](https://saicsit.org/2026/) conference in Cape Town, South Africa.
+I [attended](assets/pdf/saicsit2026_volunteer_certificate.pdf) and [presented](assets/pdf/SAICSIT2026_symposium_slides.pdf) part of my research work at the [Postgraduate Symposium](https://saicsit.org/2026/postgraduate-symposium/) at [SAICSIT 2026](https://saicsit.org/2026/) conference in Cape Town, South Africa.
