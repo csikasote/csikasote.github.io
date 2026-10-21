@@ -1640,7 +1640,7 @@ d-appendix > distill-appendix {
             : {};
 
   function createCommonjsModule(fn, module) {
-    return (module = { exports: {} }), fn(module, module.exports), module.exports;
+    return ((module = { exports: {} }), fn(module, module.exports), module.exports);
   }
 
   var bibtexParse = createCommonjsModule(function (module, exports) {
@@ -2605,7 +2605,7 @@ d-citation-list .references .title {
 
           _.hooks.run("before-all-elements-highlight", env);
 
-          for (var i = 0, element; (element = env.elements[i++]); ) {
+          for (var i = 0, element; (element = env.elements[i++]);) {
             _.highlightElement(element, async === true, env.callback);
           }
         },
@@ -2727,7 +2727,7 @@ d-citation-list .references .title {
               return;
             }
 
-            for (var i = 0, callback; (callback = callbacks[i++]); ) {
+            for (var i = 0, callback; (callback = callbacks[i++]);) {
               callback(env);
             }
           },
@@ -5075,7 +5075,7 @@ p small {
   var bisectRight = ascendingBisect.right;
 
   function range(start, stop, step) {
-    (start = +start), (stop = +stop), (step = (n = arguments.length) < 2 ? ((stop = start), (start = 0), 1) : n < 3 ? 1 : +step);
+    ((start = +start), (stop = +stop), (step = (n = arguments.length) < 2 ? ((stop = start), (start = 0), 1) : n < 3 ? 1 : +step));
 
     var i = -1,
       n = Math.max(0, Math.ceil((stop - start) / step)) | 0,
@@ -5099,9 +5099,9 @@ p small {
       ticks,
       step;
 
-    (stop = +stop), (start = +start), (count = +count);
+    ((stop = +stop), (start = +start), (count = +count));
     if (start === stop && count > 0) return [start];
-    if ((reverse = stop < start)) (n = start), (start = stop), (stop = n);
+    if ((reverse = stop < start)) ((n = start), (start = stop), (stop = n));
     if ((step = tickIncrement(start, stop, count)) === 0 || !isFinite(step)) return [];
 
     if (step > 0) {
@@ -5848,7 +5848,7 @@ p small {
       (a = +a),
       (b = +b),
       function (t) {
-        return d.setTime(a * (1 - t) + b * t), d;
+        return (d.setTime(a * (1 - t) + b * t), d);
       }
     );
   }
@@ -5910,19 +5910,21 @@ p small {
       q = []; // number interpolators
 
     // Coerce inputs to strings.
-    (a = a + ""), (b = b + "");
+    ((a = a + ""), (b = b + ""));
 
     // Interpolate pairs of numbers in a & b.
     while ((am = reA.exec(a)) && (bm = reB.exec(b))) {
       if ((bs = bm.index) > bi) {
         // a string precedes the next number in b
         bs = b.slice(bi, bs);
-        if (s[i]) s[i] += bs; // coalesce with previous string
+        if (s[i])
+          s[i] += bs; // coalesce with previous string
         else s[++i] = bs;
       }
       if ((am = am[0]) === (bm = bm[0])) {
         // numbers in a & b match
-        if (s[i]) s[i] += bm; // coalesce with previous string
+        if (s[i])
+          s[i] += bm; // coalesce with previous string
         else s[++i] = bm;
       } else {
         // interpolate non-matching numbers
@@ -5935,7 +5937,8 @@ p small {
     // Add remains of b.
     if (bi < b.length) {
       bs = b.slice(bi);
-      if (s[i]) s[i] += bs; // coalesce with previous string
+      if (s[i])
+        s[i] += bs; // coalesce with previous string
       else s[++i] = bs;
     }
 
@@ -6012,7 +6015,7 @@ p small {
 
   function clamper(a, b) {
     var t;
-    if (a > b) (t = a), (a = b), (b = t);
+    if (a > b) ((t = a), (a = b), (b = t));
     return function (x) {
       return Math.max(a, Math.min(b, x));
     };
@@ -6025,8 +6028,8 @@ p small {
       d1 = domain[1],
       r0 = range[0],
       r1 = range[1];
-    if (d1 < d0) (d0 = normalize(d1, d0)), (r0 = interpolate(r1, r0));
-    else (d0 = normalize(d0, d1)), (r0 = interpolate(r0, r1));
+    if (d1 < d0) ((d0 = normalize(d1, d0)), (r0 = interpolate(r1, r0)));
+    else ((d0 = normalize(d0, d1)), (r0 = interpolate(r0, r1)));
     return function (x) {
       return r0(d0(x));
     };
@@ -6096,7 +6099,7 @@ p small {
     };
 
     scale.rangeRound = function (_) {
-      return (range = Array.from(_)), (interpolate$1 = interpolateRound), rescale();
+      return ((range = Array.from(_)), (interpolate$1 = interpolateRound), rescale());
     };
 
     scale.clamp = function (_) {
@@ -6112,7 +6115,7 @@ p small {
     };
 
     return function (t, u) {
-      (transform = t), (untransform = u);
+      ((transform = t), (untransform = u));
       return rescale();
     };
   }
@@ -6135,7 +6138,7 @@ p small {
   }
 
   function exponent(x) {
-    return (x = formatDecimal(Math.abs(x))), x ? x[1] : NaN;
+    return ((x = formatDecimal(Math.abs(x))), x ? x[1] : NaN);
   }
 
   function formatGroup(grouping, thousands) {
@@ -6338,12 +6341,12 @@ p small {
         type = specifier.type;
 
       // The "n" type is an alias for ",g".
-      if (type === "n") (comma = true), (type = "g");
+      if (type === "n") ((comma = true), (type = "g"));
       // The "" type, and any invalid type, is an alias for ".12~g".
-      else if (!formatTypes[type]) precision === undefined && (precision = 12), (trim = true), (type = "g");
+      else if (!formatTypes[type]) (precision === undefined && (precision = 12), (trim = true), (type = "g"));
 
       // If zero fill is specified, padding goes after sign and before digits.
-      if (zero || (fill === "0" && align === "=")) (zero = true), (fill = "0"), (align = "=");
+      if (zero || (fill === "0" && align === "=")) ((zero = true), (fill = "0"), (align = "="));
 
       // Compute the prefix and suffix.
       // For SI-prefix, the suffix is lazily computed.
@@ -6394,7 +6397,7 @@ p small {
           // Break the formatted value into the integer “value” part that can be
           // grouped, and fractional or exponential “suffix” part that is not.
           if (maybeSuffix) {
-            (i = -1), (n = value.length);
+            ((i = -1), (n = value.length));
             while (++i < n) {
               if (((c = value.charCodeAt(i)), 48 > c || c > 57)) {
                 valueSuffix = (c === 46 ? decimal + value.slice(i + 1) : value.slice(i)) + valueSuffix;
@@ -6413,7 +6416,7 @@ p small {
           padding = length < width ? new Array(width - length + 1).join(fill) : "";
 
         // If the fill character is "0", grouping is applied after padding.
-        if (comma && zero) (value = group(padding + value, padding.length ? width - valueSuffix.length : Infinity)), (padding = "");
+        if (comma && zero) ((value = group(padding + value, padding.length ? width - valueSuffix.length : Infinity)), (padding = ""));
 
         // Reconstruct the final output based on the desired alignment.
         switch (align) {
@@ -6485,7 +6488,7 @@ p small {
   }
 
   function precisionRound(step, max) {
-    (step = Math.abs(step)), (max = Math.abs(max) - step);
+    ((step = Math.abs(step)), (max = Math.abs(max) - step));
     return Math.max(0, exponent(max) - exponent(step)) + 1;
   }
 
@@ -6541,8 +6544,8 @@ p small {
         step;
 
       if (stop < start) {
-        (step = start), (start = stop), (stop = step);
-        (step = i0), (i0 = i1), (i1 = step);
+        ((step = start), (start = stop), (stop = step));
+        ((step = i0), (i0 = i1), (i1 = step));
       }
 
       step = tickIncrement(start, stop, count);
@@ -6590,15 +6593,15 @@ p small {
 
   function newInterval(floori, offseti, count, field) {
     function interval(date) {
-      return floori((date = arguments.length === 0 ? new Date() : new Date(+date))), date;
+      return (floori((date = arguments.length === 0 ? new Date() : new Date(+date))), date);
     }
 
     interval.floor = function (date) {
-      return floori((date = new Date(+date))), date;
+      return (floori((date = new Date(+date))), date);
     };
 
     interval.ceil = function (date) {
-      return floori((date = new Date(date - 1))), offseti(date, 1), floori(date), date;
+      return (floori((date = new Date(date - 1))), offseti(date, 1), floori(date), date);
     };
 
     interval.round = function (date) {
@@ -6608,7 +6611,7 @@ p small {
     };
 
     interval.offset = function (date, step) {
-      return offseti((date = new Date(+date)), step == null ? 1 : Math.floor(step)), date;
+      return (offseti((date = new Date(+date)), step == null ? 1 : Math.floor(step)), date);
     };
 
     interval.range = function (start, stop, step) {
@@ -6617,7 +6620,7 @@ p small {
       start = interval.ceil(start);
       step = step == null ? 1 : Math.floor(step);
       if (!(start < stop) || !(step > 0)) return range; // also handles Invalid Date
-      do range.push((previous = new Date(+start))), offseti(start, step), floori(start);
+      do (range.push((previous = new Date(+start))), offseti(start, step), floori(start));
       while (previous < start && start < stop);
       return range;
     };
@@ -6644,8 +6647,8 @@ p small {
 
     if (count) {
       interval.count = function (start, end) {
-        t0$1.setTime(+start), t1$1.setTime(+end);
-        floori(t0$1), floori(t1$1);
+        (t0$1.setTime(+start), t1$1.setTime(+end));
+        (floori(t0$1), floori(t1$1));
         return Math.floor(count(t0$1, t1$1));
       };
 
@@ -7157,14 +7160,14 @@ p small {
           if (d.V < 1 || d.V > 53) return null;
           if (!("w" in d)) d.w = 1;
           if ("Z" in d) {
-            (week = utcDate(newDate(d.y, 0, 1))), (day$1 = week.getUTCDay());
+            ((week = utcDate(newDate(d.y, 0, 1))), (day$1 = week.getUTCDay()));
             week = day$1 > 4 || day$1 === 0 ? utcMonday.ceil(week) : utcMonday(week);
             week = utcDay.offset(week, (d.V - 1) * 7);
             d.y = week.getUTCFullYear();
             d.m = week.getUTCMonth();
             d.d = week.getUTCDate() + ((d.w + 6) % 7);
           } else {
-            (week = localDate(newDate(d.y, 0, 1))), (day$1 = week.getDay());
+            ((week = localDate(newDate(d.y, 0, 1))), (day$1 = week.getDay()));
             week = day$1 > 4 || day$1 === 0 ? monday.ceil(week) : monday(week);
             week = day.offset(week, (d.V - 1) * 7);
             d.y = week.getFullYear();
@@ -7675,7 +7678,7 @@ p small {
       .map(function (t) {
         var name = "",
           i = t.indexOf(".");
-        if (i >= 0) (name = t.slice(i + 1)), (t = t.slice(0, i));
+        if (i >= 0) ((name = t.slice(i + 1)), (t = t.slice(0, i)));
         if (t && !types.hasOwnProperty(t)) throw new Error("unknown type: " + t);
         return { type: t, name: name };
       });
@@ -7734,7 +7737,7 @@ p small {
   function set(type, name, callback) {
     for (var i = 0, n = type.length; i < n; ++i) {
       if (type[i].name === name) {
-        (type[i] = noop), (type = type.slice(0, i).concat(type.slice(i + 1)));
+        ((type[i] = noop), (type = type.slice(0, i).concat(type.slice(i + 1))));
         break;
       }
     }
@@ -7962,7 +7965,7 @@ p small {
 
   function selection_data(value, key) {
     if (!value) {
-      (data = new Array(this.size())), (j = -1);
+      ((data = new Array(this.size())), (j = -1));
       this.each(function (d) {
         data[++j] = d;
       });
@@ -8047,8 +8050,8 @@ p small {
   }
 
   function selection_order() {
-    for (var groups = this._groups, j = -1, m = groups.length; ++j < m; ) {
-      for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0; ) {
+    for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
+      for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0;) {
         if ((node = group[i])) {
           if (next && node.compareDocumentPosition(next) ^ 4) next.parentNode.insertBefore(node, next);
           next = node;
@@ -8489,7 +8492,7 @@ p small {
       .map(function (t) {
         var name = "",
           i = t.indexOf(".");
-        if (i >= 0) (name = t.slice(i + 1)), (t = t.slice(0, i));
+        if (i >= 0) ((name = t.slice(i + 1)), (t = t.slice(0, i)));
         return { type: t, name: name };
       });
   }
@@ -8582,7 +8585,7 @@ p small {
       event = new event(type, params);
     } else {
       event = window.document.createEvent("Event");
-      if (params) event.initEvent(type, params.bubbles, params.cancelable), (event.detail = params.detail);
+      if (params) (event.initEvent(type, params.bubbles, params.cancelable), (event.detail = params.detail));
       else event.initEvent(type, false, false);
     }
 
@@ -8669,7 +8672,7 @@ p small {
 
     if (svg.createSVGPoint) {
       var point = svg.createSVGPoint();
-      (point.x = event.clientX), (point.y = event.clientY);
+      ((point.x = event.clientX), (point.y = event.clientY));
       point = point.matrixTransform(node.getScreenCTM().inverse());
       return [point.x, point.y];
     }
@@ -8685,7 +8688,7 @@ p small {
   }
 
   function touch(node, touches, identifier) {
-    if (arguments.length < 3) (identifier = touches), (touches = sourceEvent().changedTouches);
+    if (arguments.length < 3) ((identifier = touches), (touches = sourceEvent().changedTouches));
 
     for (var i = 0, n = touches ? touches.length : 0, touch; i < n; ++i) {
       if ((touch = touches[i]).identifier === identifier) {
@@ -8899,12 +8902,12 @@ p small {
           n;
         switch (type) {
           case "start":
-            (gestures[id] = gesture), (n = active++);
+            ((gestures[id] = gesture), (n = active++));
             break;
           case "end":
-            delete gestures[id], --active; // nobreak
+            (delete gestures[id], --active); // nobreak
           case "drag":
-            (p = point(container, id)), (n = active);
+            ((p = point(container, id)), (n = active));
             break;
         }
         customEvent(
